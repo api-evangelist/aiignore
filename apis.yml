@@ -1,14 +1,22 @@
+aid: aiignore
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/aiignore/refs/heads/main/apis.yml
 name: .aiignore
-description: Configuration file specifying files and directories that AI coding agents
-  should not process or modify, similar to .gitignore but for AI tools. Used by JetBrains
-  Junie and other AI agents.
-url: ''
 tags:
-- AI Agents
-- Configuration
-- Security
-- Developer Workflow
-created: '2025'
-modified: '2025'
+  - AI Agents
+  - Configuration
+  - Security
+  - Developer Workflow
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+description: >-
+  Configuration file specifying files and directories that AI coding agents
+  should not process or modify, similar to .gitignore but for AI tools. Used
+  by JetBrains Junie and other AI agents.
+created: '2025-01-01'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 apis: []
-common: []
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
