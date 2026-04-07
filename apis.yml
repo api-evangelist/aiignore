@@ -5,8 +5,8 @@ name: .Aiignore
 tags:
   - AI Agents
   - Configuration
-  - Security
   - Developer Workflow
+  - Security
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 description: >-
