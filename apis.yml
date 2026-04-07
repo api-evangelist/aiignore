@@ -1,7 +1,7 @@
 aid: aiignore
 url: >-
   https://raw.githubusercontent.com/api-evangelist/aiignore/refs/heads/main/apis.yml
-name: .aiignore
+name: .Aiignore
 tags:
   - AI Agents
   - Configuration
