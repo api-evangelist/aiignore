@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aiignore/refs/heads/main/json-structure/aiignore-ai-tool-compatibility-structure.json",
+  "name": "AIToolCompatibility",
+  "description": "Compatibility record showing which AI tools support a given .aiignore syntax",
+  "type": "object",
+  "properties": {
+    "tool_name": {
+      "type": "string",
+      "description": "Name of the AI coding tool",
+      "example": "JetBrains AI Assistant"
+    },
+    "file_name": {
+      "type": "string",
+      "description": "The actual ignore file name this tool uses",
+      "example": ".aiignore"
+    },
+    "syntax": {
+      "type": "string",
+      "description": "Ignore file syntax type",
+      "example": "gitignore-compatible"
+    },
+    "scope": {
+      "type": "string",
+      "description": "Where file should be placed",
+      "example": "project root"
+    },
+    "documentation_url": {
+      "type": "string",
+      "description": "Link to tool documentation",
+      "example": "https://www.jetbrains.com/help/idea/ai-assistant.html"
+    }
+  }
+}

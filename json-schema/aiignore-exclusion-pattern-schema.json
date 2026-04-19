@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aiignore/refs/heads/main/json-schema/aiignore-exclusion-pattern-schema.json",
+  "title": "ExclusionPattern",
+  "description": "A pattern category for AI ignore exclusion rules",
+  "type": "object",
+  "properties": {
+    "category": {
+      "type": "string",
+      "description": "Category name (secrets, proprietary, generated)",
+      "example": "secrets"
+    },
+    "patterns": {
+      "type": "array",
+      "description": "List of glob patterns in this category",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rationale": {
+      "type": "string",
+      "description": "Why these files should be excluded",
+      "example": "Contains API keys and credentials that should not be sent to AI APIs"
+    }
+  }
+}

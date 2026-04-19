@@ -1,0 +1,7 @@
+{
+  "tool_name": "JetBrains AI Assistant",
+  "file_name": ".aiignore",
+  "syntax": "gitignore-compatible",
+  "scope": "project root",
+  "documentation_url": "https://www.jetbrains.com/help/idea/ai-assistant.html"
+}

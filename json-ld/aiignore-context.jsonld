@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "aiignore": "https://aiignore.dev/schema/",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "AIIgnoreRule": "aiignore:AIIgnoreRule",
+    "AIIgnoreConfig": "aiignore:AIIgnoreConfig",
+    "ExclusionPattern": "aiignore:ExclusionPattern",
+    "AIToolCompatibility": "aiignore:AIToolCompatibility",
+    "pattern": {
+      "@id": "aiignore:pattern",
+      "@type": "xsd:string"
+    },
+    "comment": {
+      "@id": "schema:description",
+      "@type": "xsd:string"
+    },
+    "negated": {
+      "@id": "aiignore:negated",
+      "@type": "xsd:boolean"
+    },
+    "scope": {
+      "@id": "aiignore:scope",
+      "@type": "xsd:string"
+    },
+    "tool": {
+      "@id": "aiignore:tool",
+      "@type": "xsd:string"
+    },
+    "rules": {
+      "@id": "aiignore:rules",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "patterns": {
+      "@id": "aiignore:patterns",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "category": {
+      "@id": "aiignore:category",
+      "@type": "xsd:string"
+    },
+    "rationale": {
+      "@id": "schema:description",
+      "@type": "xsd:string"
+    },
+    "toolName": {
+      "@id": "aiignore:tool_name",
+      "@type": "xsd:string"
+    },
+    "fileName": {
+      "@id": "aiignore:file_name",
+      "@type": "xsd:string"
+    },
+    "documentationUrl": {
+      "@id": "schema:url",
+      "@type": "@id"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "category": "secrets",
+  "patterns": [],
+  "rationale": "Contains API keys and credentials that should not be sent to AI APIs"
+}

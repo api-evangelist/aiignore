@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aiignore/refs/heads/main/json-schema/aiignore-ai-ignore-config-schema.json",
+  "title": "AIIgnoreConfig",
+  "description": "Full .aiignore configuration file structure for an AI coding tool",
+  "type": "object",
+  "properties": {
+    "tool": {
+      "type": "string",
+      "description": "Target AI tool this config applies to",
+      "example": "jetbrains"
+    },
+    "version": {
+      "type": "string",
+      "description": "AIIgnore spec version",
+      "example": "1.0"
+    },
+    "rules": {
+      "type": "array",
+      "description": "List of exclusion rules",
+      "items": {
+        "type": "object"
+      }
+    },
+    "description": {
+      "type": "string",
+      "description": "Human-readable description of this config purpose",
+      "example": "Protect secrets and proprietary code from AI coding tools"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: ".AIIgnore"
+  description: "Taxonomy for the .aiignore file specification covering exclusion rules, tool compatibility, and pattern categories for protecting sensitive files from AI coding agents."
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+operational:
+  apis:
+    - namespace: aiignore-cli
+      version: "1.0"
+      baseUrl: https://github.com/yjcho9317/aiignore-cli
+      status: active
+
+  resources:
+    - name: AIIgnoreRule
+      apis: [aiignore-cli]
+      actions: [define, match, negate]
+      description: "Single exclusion rule pattern"
+    - name: AIIgnoreConfig
+      apis: [aiignore-cli]
+      actions: [generate, validate, apply]
+      description: "Complete .aiignore configuration file"
+    - name: ExclusionPattern
+      apis: [aiignore-cli]
+      actions: [categorize, generate]
+      description: "Category of exclusion patterns (secrets, proprietary, generated)"
+    - name: AIToolCompatibility
+      apis: [aiignore-cli]
+      actions: [query, document]
+      description: "AI tool compatibility record for ignore file syntax"
+
+  actions:
+    - name: generate
+      pattern: write
+      description: "Generate .aiignore file contents"
+    - name: validate
+      pattern: read
+      description: "Validate rule patterns for syntax correctness"
+    - name: apply
+      pattern: read
+      description: "Apply rules to filter files from AI context"
+    - name: define
+      pattern: write
+      description: "Define a new exclusion rule"
+    - name: match
+      pattern: read
+      description: "Match file paths against rules"
+
+  schemas:
+    core:
+      - name: AIIgnoreRule
+        description: "Individual exclusion pattern with glob syntax"
+        keyFields: [pattern, comment, negated, scope]
+      - name: AIIgnoreConfig
+        description: "Full configuration file structure"
+        keyFields: [tool, version, rules]
+    patterns:
+      - name: ExclusionPattern
+        description: "Grouped pattern category for related exclusions"
+        keyFields: [category, patterns, rationale]
+    compatibility:
+      - name: AIToolCompatibility
+        description: "AI tool support matrix"
+        keyFields: [tool_name, file_name, syntax, documentation_url]
+
+  enums:
+    patternCategories:
+      - secrets
+      - proprietary
+      - generated
+      - binary
+      - vendor
+      - large-files
+      - personal
+    supportedTools:
+      - JetBrains AI Assistant
+      - Cursor
+      - GitHub Copilot
+      - Claude Code
+      - Codeium
+      - Windsurf
+      - Gemini Code Assist
+
+  authentication:
+    schemes:
+      - type: none
+        description: "Local configuration file - no API authentication"
+
+capability:
+  workflows:
+    - name: "AI Coding Tool Privacy Configuration"
+      description: "Generate and manage .aiignore files to protect sensitive code and data from AI coding tools"
+      personas: [Developer, Security Engineer, DevOps Engineer]
+      domains: [Security, Developer Tools, AI Governance]
+
+  personas:
+    - id: developer
+      name: "Developer"
+      description: "Developer configuring .aiignore to prevent credentials and secrets from being sent to AI tools"
+    - id: security-engineer
+      name: "Security Engineer"
+      description: "Security professional enforcing organizational policies on AI tool data access"
+
+  domains:
+    - name: "Security"
+      description: "Protecting sensitive files and data from AI model exposure"
+      resources: [AIIgnoreRule, ExclusionPattern]
+    - name: "Developer Tools"
+      description: "Configuration and tooling for AI-assisted development"
+      resources: [AIIgnoreConfig, AIToolCompatibility]
+
+crossReference:
+  - resource: AIIgnoreConfig
+    operations: [generate, validate, apply]
+    personas: [Developer, Security Engineer]
+  - resource: ExclusionPattern
+    operations: [categorize, generate]
+    personas: [Security Engineer]
+  - resource: AIToolCompatibility
+    operations: [query, document]
+    personas: [Developer, Security Engineer]

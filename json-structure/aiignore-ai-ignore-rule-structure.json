@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aiignore/refs/heads/main/json-structure/aiignore-ai-ignore-rule-structure.json",
+  "name": "AIIgnoreRule",
+  "description": "A single .aiignore exclusion rule pattern with metadata",
+  "type": "object",
+  "properties": {
+    "pattern": {
+      "type": "string",
+      "description": "Glob pattern for matching files/directories",
+      "example": "**/.env"
+    },
+    "comment": {
+      "type": "string",
+      "description": "Human-readable explanation of this rule",
+      "example": "Exclude environment files with secrets"
+    },
+    "negated": {
+      "type": "boolean",
+      "description": "If true, this rule re-includes a previously excluded path (starts with !)",
+      "example": false
+    },
+    "scope": {
+      "type": "string",
+      "description": "Scope: file, directory, or pattern",
+      "example": "file"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "tool": "jetbrains",
+  "version": "1.0",
+  "rules": [],
+  "description": "Protect secrets and proprietary code from AI coding tools"
+}

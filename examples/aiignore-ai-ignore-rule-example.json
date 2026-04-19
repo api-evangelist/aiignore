@@ -1,0 +1,6 @@
+{
+  "pattern": "**/.env",
+  "comment": "Exclude environment files with secrets",
+  "negated": false,
+  "scope": "file"
+}
