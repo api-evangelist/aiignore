@@ -40,7 +40,7 @@ apis:
   - url: https://github.com/yjcho9317/aiignore-cli
     type: GitHubRepository
   - url: https://www.npmjs.com/package/aiignore-cli
-    type: SDK
+    type: SDKs
     title: npm Package
 common:
 - name: AIIgnore CLI GitHub
