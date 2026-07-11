@@ -43,6 +43,10 @@ apis:
     type: SDKs
     title: npm Package
 common:
+- type: VulnerabilityDisclosure
+  url: security/aiignore-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/aiignore-domain-security.yml
 - name: AIIgnore CLI GitHub
   url: https://github.com/yjcho9317/aiignore-cli
   type: GitHubRepository
