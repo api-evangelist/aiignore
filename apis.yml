@@ -34,7 +34,7 @@ description: The .aiignore file is a configuration specification that tells AI c
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: aiignore:aiignore-cli
   name: AIIgnore CLI
