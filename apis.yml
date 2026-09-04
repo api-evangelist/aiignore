@@ -1,6 +1,7 @@
 aid: aiignore
 url: https://raw.githubusercontent.com/api-evangelist/aiignore/refs/heads/main/apis.yml
 name: .AIIgnore
+x-type: convention
 tags:
 - AI Agents
 - Configuration
@@ -38,7 +39,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aiignore.p
 access: 3rd-Party
 created: '2025-01-01'
 modified: '2026-04-19'
-position: Consumer
+position: Consuming
 description: The .aiignore file is a configuration specification that tells AI coding agents and LLM-powered developer tools which files, directories, and content should not be read, processed, or 
   modified. Modeled after .gitignore syntax, .aiignore files protect sensitive data, proprietary code, and personal information from being exposed to AI models during development workflows. Supported 
   by JetBrains AI Assistant, Cursor, GitHub Copilot, Claude Code, Gemini Code Assist, and other AI coding tools.
