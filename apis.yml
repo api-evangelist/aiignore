@@ -71,6 +71,12 @@ apis:
     type: SDKs
     title: npm Package
 common:
+- type: Plans
+  url: plans/aiignore-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/aiignore-rate-limits.yml
+- type: FinOps
+  url: finops/aiignore-finops.yml
 - type: VulnerabilityDisclosure
   url: security/aiignore-vulnerability-disclosure.yml
 - type: DomainSecurity
