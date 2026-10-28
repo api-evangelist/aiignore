@@ -1,4 +1,4 @@
-# .AIIgnore (aiignore)
+# .AIIgnore
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,113 +66,108 @@
 
 The .aiignore file is a configuration specification that tells AI coding agents and LLM-powered developer tools which files, directories, and content should not be read, processed, or modified. Modeled after .gitignore syntax, .aiignore files protect sensitive data, proprietary code, and personal information from being exposed to AI models during development workflows. Supported by JetBrains AI Assistant, Cursor, GitHub Copilot, Claude Code, Gemini Code Assist, and other AI coding tools.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/aiignore/refs/heads/main/apis.yml)
+**Areas:** AI Agents · Configuration · Developer Workflow · Security · Privacy · Developer Tools · LLM · Secrets Management
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## .AIIgnore on APIs.io
 
-## Tags:
+Everything profiled for .AIIgnore is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aiignore/](https://apis.io/providers/aiignore/)** — or go straight to one of the APIs or properties below.
 
- - AI Agents, Configuration, Developer Workflow, Security, Privacy, Developer Tools, LLM, Secrets Management
+### APIs (1)
 
-## Timestamps
+- [AIIgnore CLI](https://apis.io/apis/aiignore/aiignore-cli/) — Command-line tool that generates .aiignore configuration files to protect secrets from AI coding tools including JetBrains AI, Cursor, GitHub Copilot,…
 
-- **Created:** 2025-01-01
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### AIIgnore CLI
-Command-line tool that generates .aiignore configuration files to protect secrets from AI coding tools including JetBrains AI, Cursor, GitHub Copilot, Claude Code, Codeium, and Windsurf with a single command.
+#### JSON Schema (4)
 
-**Human URL:** [https://github.com/yjcho9317/aiignore-cli](https://github.com/yjcho9317/aiignore-cli)
+The data models the API reads and writes.
 
-#### Tags:
+- [AIIgnoreConfig](https://apis.io/schemas/aiignore/aiignore-ai-ignore-config/)
+- [AIIgnoreRule](https://apis.io/schemas/aiignore/aiignore-ai-ignore-rule/)
+- [AIToolCompatibility](https://apis.io/schemas/aiignore/aiignore-ai-tool-compatibility/)
+- [ExclusionPattern](https://apis.io/schemas/aiignore/aiignore-exclusion-pattern/)
 
- - CLI, Security, Developer Tools, TypeScript, Node.js, Secrets Management
+#### JSON Structure (4)
 
-#### Properties
+Data models expressed in JSON Structure.
 
-- [GitHubRepository](https://github.com/yjcho9317/aiignore-cli)
-- [npm Package](https://www.npmjs.com/package/aiignore-cli)
+- [Aiignore Ai Ignore Config Structure](https://apis.io/json-structure/aiignore/aiignore-ai-ignore-config-structure/)
+- [Aiignore Ai Ignore Rule Structure](https://apis.io/json-structure/aiignore/aiignore-ai-ignore-rule-structure/)
+- [Aiignore Ai Tool Compatibility Structure](https://apis.io/json-structure/aiignore/aiignore-ai-tool-compatibility-structure/)
+- [Aiignore Exclusion Pattern Structure](https://apis.io/json-structure/aiignore/aiignore-exclusion-pattern-structure/)
 
-## Common Properties
+#### JSON-LD (1)
 
-- [AIIgnore CLI GitHub](https://github.com/yjcho9317/aiignore-cli)
-- [JetBrains AI Assistant](https://www.jetbrains.com/ai/)
-- [GitHub Topics: aiignore](https://github.com/topics/aiignore)
-- [Cursor AI Rules](https://docs.cursor.com/context/rules)
-- [Claude Code Ignore](https://docs.anthropic.com/en/claude-code/)
+Linked-data contexts for the provider's vocabulary.
 
-## Features
+- [Aiignore Context](https://apis.io/jsonld/aiignore/aiignore-context/)
 
-| Name | Description |
-|------|-------------|
-| .gitignore-Compatible Syntax | Uses familiar glob pattern syntax from .gitignore so developers can immediately define exclusion rules. |
-| Secrets Protection | Prevents AI models from reading .env files, credential files, API keys, private keys, and other sensitive data. |
-| Multi-Tool Support | Single .aiignore file works across JetBrains AI, Cursor, GitHub Copilot, Claude Code, Codeium, and Windsurf. |
-| Directory-Level Exclusion | Exclude entire directories from AI context with simple pattern rules (e.g., vendor/, node_modules/). |
-| File Pattern Matching | Match files by extension, name, or path pattern to control AI model access granularly. |
-| Project-Root Placement | Single file in project root applies rules across the entire project tree. |
-| Proprietary Code Protection | Prevent proprietary algorithms, business logic, or licensed code from being sent to external AI APIs. |
-| CLI Generation Tool | aiignore-cli generates boilerplate .aiignore files with one command, covering common secrets patterns automatically. |
+#### Vocabulary (1)
 
-## Use Cases
+The provider's domain terms, defined.
 
-| Name | Description |
-|------|-------------|
-| API Key Protection | Exclude .env and config files containing API keys, tokens, and credentials from AI coding tool context. |
-| Proprietary Algorithm Protection | Protect trade secrets and proprietary algorithms from being processed by AI models hosted on third-party infrastructure. |
-| Compliance and Data Privacy | Ensure regulated data (PII, healthcare records, financial data) is not sent to external AI APIs. |
-| Large File Exclusion | Exclude large binary files, build artifacts, and generated files that would waste AI context window. |
-| Third-Party Code Exclusion | Prevent licensed third-party code and vendor directories from being included in AI context. |
+- [Aiignore Vocabulary](https://apis.io/vocabularies/aiignore/aiignore-vocabulary/)
 
-## Integrations
+#### Examples (4)
 
-| Name | Description |
-|------|-------------|
-| JetBrains AI Assistant | JetBrains IDEs (IntelliJ, PyCharm, WebStorm, etc.) AI Assistant respects .aiignore in project root. |
-| Cursor AI Editor | Cursor IDE supports .cursorignore (similar concept) for controlling AI context access. |
-| GitHub Copilot | GitHub Copilot supports content exclusion via repository settings and .copilotignore patterns. |
-| Claude Code | Anthropic Claude Code CLI supports .claudeignore file for excluding files from AI context. |
-| Codeium | Codeium AI coding assistant with configurable file exclusion patterns. |
-| Windsurf | Codeium Windsurf AI editor with .windsurfignore support for context control. |
-| Gemini Code Assist | Google Gemini Code Assist with project-level context exclusion configuration. |
+Example requests and responses.
 
-## Artifacts
+- [Aiignore Ai Ignore Config Example](https://apis.io/examples/aiignore/aiignore-ai-ignore-config-example/)
+- [Aiignore Ai Ignore Rule Example](https://apis.io/examples/aiignore/aiignore-ai-ignore-rule-example/)
+- [Aiignore Ai Tool Compatibility Example](https://apis.io/examples/aiignore/aiignore-ai-tool-compatibility-example/)
+- [Aiignore Exclusion Pattern Example](https://apis.io/examples/aiignore/aiignore-exclusion-pattern-example/)
 
-Machine-readable schema specifications organized by format.
+#### Governance rules (1)
 
-### JSON Schema
+Spectral rulesets for the provider's contracts.
 
-- [aiignore-ai-ignore-config-schema.json](json-schema/aiignore-ai-ignore-config-schema.json)
-- [aiignore-ai-ignore-rule-schema.json](json-schema/aiignore-ai-ignore-rule-schema.json)
-- [aiignore-ai-tool-compatibility-schema.json](json-schema/aiignore-ai-tool-compatibility-schema.json)
-- [aiignore-exclusion-pattern-schema.json](json-schema/aiignore-exclusion-pattern-schema.json)
+- [.AIIgnore — jsonschema rules](https://apis.io/rules/aiignore/aiignore-jsonschema-spectral-rules/)
 
-### JSON Structure
+#### Security (2)
 
-- [aiignore-ai-ignore-config-structure.json](json-structure/aiignore-ai-ignore-config-structure.json)
-- [aiignore-ai-ignore-rule-structure.json](json-structure/aiignore-ai-ignore-rule-structure.json)
-- [aiignore-ai-tool-compatibility-structure.json](json-structure/aiignore-ai-tool-compatibility-structure.json)
-- [aiignore-exclusion-pattern-structure.json](json-structure/aiignore-exclusion-pattern-structure.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-### JSON-LD
+- [Aiignore Domain Security](https://apis.io/security/aiignore/aiignore-domain-security/)
+- [Aiignore Vulnerability Disclosure](https://apis.io/security/aiignore/aiignore-vulnerability-disclosure/)
 
-- [aiignore-context.jsonld](json-ld/aiignore-context.jsonld)
+#### Plans and pricing (1)
 
-### Examples
+Published plans, tiers and prices.
 
-- [aiignore-ai-ignore-config-example.json](examples/aiignore-ai-ignore-config-example.json)
-- [aiignore-ai-ignore-rule-example.json](examples/aiignore-ai-ignore-rule-example.json)
-- [aiignore-ai-tool-compatibility-example.json](examples/aiignore-ai-tool-compatibility-example.json)
-- [aiignore-exclusion-pattern-example.json](examples/aiignore-exclusion-pattern-example.json)
+- [Aiignore Plans Pricing](https://apis.io/plans/aiignore/aiignore-plans-pricing/)
 
-## Vocabulary
+#### Rate limits (1)
 
-- [.AIIgnore Vocabulary](vocabulary/aiignore-vocabulary.yaml) — Taxonomy mapping 4 resources, 5 actions, and 2 personas across AI coding tool privacy and configuration domains
+Published request limits.
 
-## Maintainers
+- [Aiignore Rate Limits](https://apis.io/rate-limits/aiignore/aiignore-rate-limits/)
 
-**FN:** Kin Lane
+#### FinOps (1)
 
-**Email:** kin@apievangelist.com
+What the API costs to run, by operation.
+
+- [Aiignore Finops](https://apis.io/finops/aiignore/aiignore-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Documentation](https://docs.cursor.com/context/rules)
+
+## API Evangelist rating
+
+Not yet rated. See [apis.io/providers/aiignore/](https://apis.io/providers/aiignore/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for .AIIgnore: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aiignore/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
